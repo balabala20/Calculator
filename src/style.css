@@ -1,68 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100dvh;
+  height: 100dvh;
+  background: linear-gradient(
+    to bottom right,
+    black,
+    rgb(86, 28, 86),
+    rgba(130, 57, 130, 0.775)
+  );
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    width: 45vh;
+    height: 100vh;
+    background: linear-gradient(
+      to bottom right,
+      black,
+      rgb(86, 28, 86),
+      rgba(130, 57, 130, 0.775)
+    );
+    background-size: cover;
+    background-position: center;
+  }
+}
 
+.outerLayer {
+  width: 300px;
+  height: 500px;
+  background-color: #111111;
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  border-radius: 20px;
 }
-body{
-    width: 100dvh;
-    height: 100dvh;
-    background: linear-gradient(to bottom right, black,rgb(86, 28, 86),rgba(130, 57, 130, 0.775));
+.screen {
+  width: 280px;
+  height: 100px;
+  background: #b7b7cf;
+  position: relative;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10px;
+  overflow: auto;
 }
-
-.outerLayer{
-    width: 300px;
-    height: 500px;
-    background-color: #111111;
-    border: 2px solid black;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-    border-radius: 20px;
+.buttons {
+  width: 280px;
+  height: 350px;
+  background: rgba(14, 11, 13, 0.603);
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 35px;
+  margin: auto;
+  border-radius: 25px;
+  display: -ms-inline-grid;
+  padding: 2px;
 }
-.screen{
-    width: 280px;
-    height: 100px;
-    background: #b7b7cf;
-    position: relative;
-    top: 20px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 10px;
-    overflow: auto;
-    
+.button {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  color: white;
+  font-size: 25px;
+  background: black;
+  margin: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgb(135, 123, 86);
 }
-.buttons{
-    width: 280px;
-    height: 350px;
-    background: rgba(14, 11, 13, 0.603);
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 35px;
-    margin: auto;
-    border-radius: 25px;
-    display: -ms-inline-grid;
-    padding: 2px;
-}
-.button{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    color: white;
-    font-size: 25px;
-    background: black;
-    margin: 5px;
-    border: none;
-    box-shadow: 0 0 5px rgb(135, 123, 86);
-    
-}
-.result{
-    font-size: 28px;
-    color: black;
-    position: relative;
-    top: 27px;
+.result {
+  font-size: 28px;
+  color: black;
+  position: relative;
+  top: 27px;
 }
